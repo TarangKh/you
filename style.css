@@ -1,0 +1,93 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#ccc;
+    overflow: hidden;
+    position: relative;
+}
+ 
+.video {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    visibility: hidden;
+} 
+
+.frame {
+    position: relative;
+    /* background-color: black; */
+    width: 400px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:center;
+    z-index: 1;
+    
+}
+
+.content {
+    width: 100%;
+    height: 99%;
+    /* background-color: blanchedalmond; */
+    /* background-size: contain; */
+    /* background-image: url("src\moon1.jpeg"); */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    z-index: 2;
+    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.8);
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+}
+
+.main-video {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    visibility: hidden;
+}
+
+.form-div {
+    /* background-color: black; */
+    width: 100%;
+    height: 21%;
+    display: flex;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    
+}
+.form-select {
+    width: 100%;
+    height: 50px;
+}
+
+from {
+    width: 100%;
+}
