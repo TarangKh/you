@@ -20,10 +20,14 @@
     width: 100%;
     height: auto;
     background-size: cover;
+    top: 0;
     right: 0;
     bottom: 0;
+    object-fit: cover;
     z-index: 0;
     visibility: hidden;
+    min-width: 100%;
+    min-height: 100%;
 } 
 
 .frame {
@@ -38,6 +42,28 @@
     z-index: 1;
     
 }
+
+@media screen and (max-width: 450px) {
+    .frame {
+        width: 270px;
+        height: 60%;
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 1050px) {
+    .frame {
+        width: 350px;
+        height: 60%;
+    }
+}
+
+
+@media screen and (min-height: 820px) {
+    .frame {
+        height: 80%;
+    }
+} 
+
 
 .content {
     width: 100%;
@@ -91,3 +117,4 @@ img{
 from {
     width: 100%;
 }
+
